@@ -27,7 +27,7 @@ config.background = { -- Setting background
     },
     {
         source = {
-            File = 'C:/Users/HaloGamer33/.config/wezterm/terminal.jpg',
+            File = 'C:/Users/HaloGamer33/.config/wezterm/wallpapers/terminal.jpg',
         },
         opacity = 0.75,
     },
