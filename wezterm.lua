@@ -23,7 +23,7 @@ config.keys = {
 
 config.font = wezterm.font('0xProto Nerd Font')
 config.font_size = 13
-config.default_prog = { 'pwsh' } -- Set Powershell
+config.default_prog = { 'nu' } -- Set Powershell
 
 config.background = { -- Setting background
     {
