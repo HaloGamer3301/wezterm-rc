@@ -1,4 +1,5 @@
 local wezterm = require('wezterm')
+local act = wezterm.action
 local config = {}
 
 -- Maximize window on startup
@@ -11,6 +12,13 @@ local config = {}
 if wezterm.config_builder then
   config = wezterm.config_builder()
 end
+
+config.keys = {
+    { key = 'w', mods = 'ALT', action = act.CloseCurrentTab { confirm = true }, },
+    { key = 'j', mods = 'ALT', action = act.ActivateTabRelative(-1) },
+    { key = 'k', mods = 'ALT', action = act.ActivateTabRelative(1) },
+    { key = 't', mods = 'ALT', action = act.SpawnCommandInNewTab },
+}
 
 
 config.font = wezterm.font('0xProto Nerd Font')
