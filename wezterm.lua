@@ -18,6 +18,8 @@ config.keys = {
     { key = 'j', mods = 'ALT', action = act.ActivateTabRelative(-1) },
     { key = 'k', mods = 'ALT', action = act.ActivateTabRelative(1) },
     { key = 't', mods = 'ALT', action = act.SpawnCommandInNewTab },
+    { key = ',', mods = 'CTRL', action = act.MoveTabRelative(-1) },
+    { key = '.', mods = 'CTRL', action = act.MoveTabRelative(1) },
 }
 
 
